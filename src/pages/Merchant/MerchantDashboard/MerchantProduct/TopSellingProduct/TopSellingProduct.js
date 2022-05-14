@@ -6,7 +6,10 @@ function TopSellingProduct(props) {
   console.log(props.productDetails);
   return (
     <div className={styles.topSellingProduct}>
-      <img src={props?.productDetails.img_src} />
+      <img
+        src={props?.productDetails.img_src}
+        alt={props?.productDetails.productName}
+      />
       <div className={styles.productDetails}>
         <span className={styles.productName}>
           {props?.productDetails.productName}
